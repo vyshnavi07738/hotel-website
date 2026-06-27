@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book your luxury room at Royal Palace Hotel with our easy online booking form.">
+    <meta name="keywords" content="hotel booking, room booking, luxury hotel, Royal Palace Hotel">
+    <title>Royal Palace Hotel | Room Booking</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <h2 class="logo">Royal Palace Hotel</h2>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="roombooking.html" class="active">Book Room</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="page-banner">
+    <h1>Room Booking</h1>
+    <p>Reserve your stay at Royal Palace Hotel.</p>
+</section>
+
+<section class="booking-form">
+
+    <h2>Book Your Room</h2>
+
+    <form onsubmit="return validateBooking()">
+
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your full name">
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email">
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="Enter your phone number">
+
+        <label for="checkin">Check-In Date</label>
+        <input type="date" id="checkin">
+
+        <label for="checkout">Check-Out Date</label>
+        <input type="date" id="checkout">
+
+        <label for="room">Room Type</label>
+        <select id="room">
+            <option value="">Select Room</option>
+            <option>Deluxe Room - ₹3,000/Night</option>
+            <option>Premium Room - ₹5,000/Night</option>
+            <option>Suite Room - ₹8,000/Night</option>
+        </select>
+
+        <label for="guests">Number of Guests</label>
+        <input type="number" id="guests" min="1" max="10" placeholder="Enter number of guests">
+
+        <label for="message">Special Request</label>
+        <textarea id="message" rows="5" placeholder="Any special request..."></textarea>
+
+        <button type="submit" class="btn">Confirm Booking</button>
+
+    </form>
+
+</section>
+
+<footer>
+    <p>&copy; 2026 Royal Palace Hotel. All Rights Reserved.</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
