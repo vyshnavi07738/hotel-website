@@ -1,4 +1,5 @@
 User-agent: *
+
 Allow: /
 
 Sitemap: https://velvety-florentine-438daa.netlify.app/sitemap.xml
